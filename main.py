@@ -44,8 +44,8 @@ def get_category_by_id(config, id):
 
     return result_json
 
+if __name__ == "__main__":
+    config = ['localhost', 'northwind', 'postgres', 'postgres']
 
-config = ['localhost', 'northwind', 'postgres', 'postgres']
-
-print(get_product_by_id(config, 4))
-print(get_category_by_id(config, 8))
+    print(get_product_by_id(config, 4))
+    print(get_category_by_id(config, 8))
